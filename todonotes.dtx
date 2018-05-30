@@ -2,7 +2,7 @@
 %
 % Copyright (C) 2015 by Henrik Skov Midtiby <henrikmidtiby@gmail.com>
 % -------------------------------------------------------
-% 
+%
 % This file may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.2
 % of this license or (at your option) any later version.
@@ -10,7 +10,7 @@
 %
 %    http://www.latex-project.org/lppl.txt
 %
-% and version 1.2 or later is part of all distributions of LaTeX 
+% and version 1.2 or later is part of all distributions of LaTeX
 % version 1999/12/01 or later.
 %
 % \fi
@@ -34,7 +34,7 @@
 \usepackage{setspace}
 \usepackage{soul}
 \setcounter{tocdepth}{2}
-\EnableCrossrefs         
+\EnableCrossrefs
 \CodelineIndex
 \RecordChanges
 \begin{document}
@@ -68,7 +68,7 @@
 %
 % \changes{0.1}{2008/04/17}{The first version of the package}
 % \changes{0.2}{2008/05/15}{Updated the option handling of the package}
-% \changes{0.2.1}{2008/05/16}{Slightly modified by Kjell Magne Fauske to 
+% \changes{0.2.1}{2008/05/16}{Slightly modified by Kjell Magne Fauske to
 %             support notes in the left margin (for documentstyle book).}
 % \changes{0.2.2}{2008/05/28}{Added a missingfigure command}
 % \changes{0.2.3}{2008/06/10}{Made a dependency on the calc package}
@@ -78,7 +78,7 @@
 %             from Patrick Toche)}
 % \changes{0.3.1}{2008/07/15}{Added some options to the todo macro (Idea: Patrick
 %             Toche) and made the \\listoftodos point at the inserted
-%             todos and not only the current / previous section, 
+%             todos and not only the current / previous section,
 %             subsection or figure using the \\phantomsection macro.}
 % \changes{0.4}{2008/07/28}{Modified the behaviour of the inline todonotes, to
 %             avoid empty lines around the inline todonotes.}
@@ -121,7 +121,7 @@
 % \changes{0.8}{2009/01/09}{Added three new translations french,
 %             spanish and catalan thanks to Richard Dominique and
 %             Joan Queralt. Improved the visual appearence of the
-%             inserted notes (rounded corners and optional shadows) 
+%             inserted notes (rounded corners and optional shadows)
 %             with code from Joan Queralt. Found an untranslated
 %             textstring ''Figure'' in the source. Added a figwidth
 %             option to the missingfigure command, patch by Paul
@@ -133,47 +133,47 @@
 % \changes{0.8.2}{2009/02/04}{Italian translation by Gustavo
 %             Cevolani. Removed the dependence on the hyperref
 %             package.}
-% \changes{0.8.3}{2009/03/31}{Added a use case for linking to the 
+% \changes{0.8.3}{2009/03/31}{Added a use case for linking to the
 %             list of todos, idea from Andreas Plank. Introduced a
 %             package option for listening to the draft option given
 %             to the document class.}
 % \changes{0.8.4}{2009/04/02}{Fixed a bug related to the obeyDraft
-%             option.} 
-% \changes{0.8.5}{2009/08/01}{Added two new usecases (enumeration of 
-%             inserted todonotes and how to set custom default values). 
+%             option.}
+% \changes{0.8.5}{2009/08/01}{Added two new usecases (enumeration of
+%             inserted todonotes and how to set custom default values).
 %             Changed the order of the use case examples.}
 % \changes{0.8.6}{2009/08/05}{Added a portuguese translation by Og DeSouza.}
-% \changes{0.8.7}{2009/10/24}{Updated portuguese translation. Added a ngerman 
+% \changes{0.8.7}{2009/10/24}{Updated portuguese translation. Added a ngerman
 %             alias for the german translation suggested by Michael Niedermair.}
-% \changes{0.8.8}{2009/12/07}{Added a new usecase from Vitaly. Fixed a 
+% \changes{0.8.8}{2009/12/07}{Added a new usecase from Vitaly. Fixed a
 %             bug reported by Oscar Gustafsson. Explained why the placement
 %             of todonotes in the margin fails in certain custom document classes.}
 % \changes{0.8.9}{2009/12/25}{Added a dutch translation by Ruben Ruben Vermeersch.}
 % \changes{0.9.0}{2010/09/13}{Added a english option as suggested by Marco Berghoff.}
 % \changes{0.9.1}{2010/09/13}{Added the todototoc command by idea from Sven Augustin.}
 % \changes{0.9.2}{2010/09/13}{Use chapter (if available) for the list of todos heading.}
-% \changes{0.9.3}{2010/09/13}{Make an internal definition of the todo command, 
+% \changes{0.9.3}{2010/09/13}{Make an internal definition of the todo command,
 %             for easing redefinition of the command behaviour.}
 % \changes{0.9.4}{2010/09/26}{Make the disable option work on a local scale.}
-% \changes{0.9.5}{2010/09/26}{Code simplification by extracting functionality to 
+% \changes{0.9.5}{2010/09/26}{Code simplification by extracting functionality to
 %             smaller macros.}
-% \changes{0.9.6}{2010/11/04}{Give fontsize to TikZ. Align notes with line where note 
+% \changes{0.9.6}{2010/11/04}{Give fontsize to TikZ. Align notes with line where note
 %             is set. Added new option fancyline. Patches by Benjamin Kellermann.}
 % \changes{0.9.7}{2011/03/07}{Updated documentation.}
-% \changes{0.9.8}{2011/04/21}{Suppress warnings about underfull / overful boxes 
+% \changes{0.9.8}{2011/04/21}{Suppress warnings about underfull / overful boxes
 %             generated by the inserted todonotes. Patch by Peter M Schuler.}
-% \changes{0.9.9}{2011/10/22}{Added author option, implementation provided by 
-%             Xavier Alameda-Pineda. Example of modifying the 
+% \changes{0.9.9}{2011/10/22}{Added author option, implementation provided by
+%             Xavier Alameda-Pineda. Example of modifying the
 %             listoftodos removing some protect commands with no effect.}
-% \changes{1.0.0}{2012/07/25}{Mention trouble with the classicthesis style. 
+% \changes{1.0.0}{2012/07/25}{Mention trouble with the classicthesis style.
 %             Refer to some alternatives to the package.
 %             Added todoin command as suggested by Stefan Pinnow.
 %             Described how to use tikz externalize with todonotes.
 %             Added obeyDraft and obeyFinal options.}
-% \changes{1.0.1}{2012/11/24}{Fix spacing issues reported by Jonathan Zachhuber and 
+% \changes{1.0.1}{2012/11/24}{Fix spacing issues reported by Jonathan Zachhuber and
 %             Brent Longborough.
 %             Added figheight option to the missingfigure command as suggested by Kim Albertsson.}
-% \changes{1.0.2}{2014/07/14}{Added Swedish translation by Emil Lundberg. 
+% \changes{1.0.2}{2014/07/14}{Added Swedish translation by Emil Lundberg.
 %             Added usecase by Tobias Winchen.
 %             Mentioned that default arguments can be set using the presetkeys command.
 %             Updated list of alternatives to the todonotes package.
@@ -181,11 +181,11 @@
 % \changes{1.0.3}{2014/10/21}{Added the option figcolor to missing figure, patch by Pascal Hebbeker.
 %             Added Croatian translation by Ican Kokan.
 %             Changed default with of missingfigure.
-%             Removed some underfull box warnings, solution by Ernst Blecha.} 
-% \changes{1.0.4}{2015/07/09}{Restructured documentation and placed some examples in the 
+%             Removed some underfull box warnings, solution by Ernst Blecha.}
+% \changes{1.0.4}{2015/07/09}{Restructured documentation and placed some examples in the
 %             doc/examples subdirectory.}
 % \changes{1.0.5}{2016/11/02}{Example of how to change the space eating behaviour added by Anselm Wagner. Reduced the width of missingfigure to avoid bad box warnings.}
-% \GetFileInfo{todonotes.dtx}   
+% \GetFileInfo{todonotes.dtx}
 %
 % \DoNotIndex{\newcommand,\newenvironment}
 %
@@ -194,7 +194,7 @@
 % (typically update of documentation).
 % \fi
 % \newcommand{\donow}[1]{\todo[color=blue]{#1}}
-% 
+%
 %
 % \title{The \textsf{todonotes} package\thanks{This document
 %   corresponds to \textsf{todonotes}~\fileversion, dated \filedate.}}
@@ -220,7 +220,7 @@
 % (todonotes \ldots).
 % I developed the basic functionality of the package while I worked
 % on my bachelor project.
-% 
+%
 % Some alternatives for the todonotes package are:
 % \begin{itemize}
 % \item \href{http://ctan.org/pkg/easy-todo}{easy-todo}\\
@@ -232,25 +232,25 @@
 % \item \href{http://ctan.org/pkg/fixme}{fixme}\\
 % Large package with a lot of features.
 % \end{itemize}
-% The main reason for considering other packages is that the todonotes 
+% The main reason for considering other packages is that the todonotes
 % package is quire large and relies heavily on tikz.
 % This can slow down compilation of large documents significantly.
-% The mentioned alternatives have a different feature set and does not 
+% The mentioned alternatives have a different feature set and does not
 % rely on tikz, which makes them require less ressoureces.
 %
 %
 % \subsection{Usage}
 %
 % \DescribeMacro{\todo}
-% My \index{\todo}most common usage of the todonotes package, is to 
-% insert an todonotes somewhere in a latex document. 
-% An example of this usage is the command 
+% My \index{\todo}most common usage of the todonotes package, is to
+% insert an todonotes somewhere in a latex document.
+% An example of this usage is the command
 %
-% |\todo{Make a cake \ldots}|, 
-% 
+% |\todo{Make a cake \ldots}|,
+%
 % \noindent
 % which renders like\todo{Make a cake \ldots}.
-% The |\todo| command has this structure: 
+% The |\todo| command has this structure:
 % |\todo|\oarg{options}\marg{todo text}.
 % The |todo text| is the text that will be shown in the todonote and
 % in the list of todos. The optional argument |options|, allows the
@@ -260,14 +260,14 @@
 %
 %
 % \DescribeMacro{\missingfigure}
-% The |\missingfigure| command inserts an image containing an 
+% The |\missingfigure| command inserts an image containing an
 % attention sign and the given text.
 % The command takes only one argument
 % |\missingfigure|\marg{text}, a text string that could
 % describe what the figure should consist of.
-% An example of its usage could be 
+% An example of its usage could be
 %
-% |\missingfigure{Make a sketch of the structure of a trebuchet.}| 
+% |\missingfigure{Make a sketch of the structure of a trebuchet.}|
 %
 % \noindent
 % which renders like.
@@ -283,8 +283,8 @@
 % \vspace{0.5cm}
 %
 % \DescribeMacro{\todototoc}
-% The |\todototoc| command adds an entry to the table of contents for 
-% list of todos. The command should be placed right before the 
+% The |\todototoc| command adds an entry to the table of contents for
+% list of todos. The command should be placed right before the
 % |\listoftodos| command.
 %
 % \subsection{Package options}
@@ -297,27 +297,27 @@
 %
 % \DescribeMacro{obeyDraft, obeyFinal}
 % When the option |obeyDraft| is given, the package checks
-% if the one of the options |draft|, |draftcls| or |draftclsnofoot| 
+% if the one of the options |draft|, |draftcls| or |draftclsnofoot|
 % is given (this option is usually given to
 % the documentclass). If the |draft| option is given, the
 % functionality of the package is enabled and otherwise the effect
 % of the package is disabled.
-% The option |obeyFinal| does something similar, except that the 
+% The option |obeyFinal| does something similar, except that the
 % todonotes package is only disabled if the |final| option given.
 %
 % \DescribeMacro{danish, german, ngerman, english, french, swedish}
 % \DescribeMacro{spanish, catalan, italian}
 % \DescribeMacro{portuguese, dutch, croatian}
-% Use translations of the text strings 
+% Use translations of the text strings
 % ''List of todos'' and ''Missing figure''.
 % The default is to use none of these options, which results in
 % english text strings.
-% Currently the following languages are supported: 
+% Currently the following languages are supported:
 % catalan,
 % croatian,
 % danish,
 % dutch,
-% english, 
+% english,
 % french,
 % german,
 % ngerman,
@@ -325,12 +325,12 @@
 % portuguese,
 % spanish and
 % swedish.
-% 
+%
 % \DescribeMacro{colorinlistoftodos}
 % Adds a small colored square in front of all items in the Todo
 % list. The color of the square is the same as the fill color of the
 % inserted todonote.
-% This can be useful if there are different types of todos 
+% This can be useful if there are different types of todos
 % (insert reference, explain in detail, \ldots) where the color of
 % the inserted todonote marks the type of todo.
 %
@@ -343,29 +343,29 @@
 % (default |bordercolor=black|) around the inserted text, the color
 % behind the inserted text (default |backgroundcolor=orange|) and
 % the color of the line connecting the inserted textbox with the
-% current location in the text (default |linecolor=orange|). 
-% Setting the |color| option to |val| passes this value on to the 
+% current location in the text (default |linecolor=orange|).
+% Setting the |color| option to |val| passes this value on to the
 % background and line color options.
-% The specified colors must be valid according to the 
+% The specified colors must be valid according to the
 % |xcolor| package.
-% 
+%
 % \DescribeMacro{textwidth}
 % |textwidth=length| sets the width of a todo item in the margin to
-% |length|. The width of inline todonotes will allways be the same 
+% |length|. The width of inline todonotes will allways be the same
 % as the current line width.
 %
 % \DescribeMacro{textsize}
 % |textsize=value| sets the default text size of the inserted
 % todonotes to the given value.
 % Value is the ''name'' of the used font size, eg. if the desired
-% fontsize is |\tiny| use |textsize=tiny|. The default value is 
+% fontsize is |\tiny| use |textsize=tiny|. The default value is
 % |textsize=normalsize|.
 %
 % \DescribeMacro{prependcaption}
 % The |prependcaption| option triggers a special behaviour of the
 % |caption=val| option for the todo command, where the given value
 % |val| is inserted in the inserted todonote.
-% 
+%
 % \DescribeMacro{shadow}
 % If the |shadow| option is given, the inserted todonotes will be
 % displayed with a gray shadow.
@@ -382,17 +382,17 @@
 %
 % \DescribeMacro{figwidth}
 % The |figwidth=length| option sets the default width of the figure
-% inserted by the |\missingfigure| command. 
+% inserted by the |\missingfigure| command.
 % The default value is |\linewidth|.
 %
-% 
+%
 %
 % \subsection{Options for the todo command}
 % \label{subsecTodoOptions}
 % There are several options that can be given to the |\todo|
 % command. All the options are described here and often I have
 % included examples of the change in visual appearance.
-% Default values for these options can be set using the presetkeys 
+% Default values for these options can be set using the presetkeys
 % command.
 % \begin{verbatim}
 % \presetkeys{todonotes}{fancyline, color=blue!30}{}
@@ -441,7 +441,7 @@
 % in the original text.}
 % |\todo[noline]{A note with no line ...}|
 % \vspace{1.0cm}
-% 
+%
 %
 % \DescribeMacro{inline / noinline}
 % It is possible to place a todonote inside the text instead of
@@ -513,14 +513,14 @@
 % and tedious note that cannot be on one line in the list of
 % todos.}
 % \begin{verbatim}
-% \todo[prepend, caption={Short note with prepend}]{A very long and tedious 
+% \todo[prepend, caption={Short note with prepend}]{A very long and tedious
 % note that cannot be on one line in the list of todos.}.
-% \todo[noprepend, caption={Short note with noprepend}]{A very long and 
+% \todo[noprepend, caption={Short note with noprepend}]{A very long and
 % tedious note that cannot be on one line in the list of todos.}.
 % \end{verbatim}
 %
 % \DescribeMacro{fancyline}
-% The |fancyline| option inserts a curved arrow, pointing from the inserted 
+% The |fancyline| option inserts a curved arrow, pointing from the inserted
 % note to the insertion point.
 % \todo[fancyline]{Testing.}
 % The option is used like this:
@@ -547,7 +547,7 @@
 % Length values below $6cm$ might trigger some problems with the
 % visual appearance.
 % Try to compare the default of the missing figure command, when the
-% option is given or not. 
+% option is given or not.
 % \begin{verbatim}
 % \missingfigure[figwidth=6cm]{Testing a long text string}
 % \end{verbatim}
@@ -566,11 +566,11 @@
 % \missingfigure[figwidth=6cm]{Add a test image \ldots}
 % \end{wrapfigure}
 % \end{verbatim}
-% 
+%
 % \DescribeMacro{figheight}
-% The |figheight=length| option changes the height of the inserted 
+% The |figheight=length| option changes the height of the inserted
 % missing figure.
-% The default height is 4cm and using values lower than this might 
+% The default height is 4cm and using values lower than this might
 % cause the warning sign to pop out of the gray area.
 % \begin{verbatim}
 % \missingfigure[figheight=6cm]{Testing a long text string}
@@ -579,7 +579,7 @@
 %
 %
 % \DescribeMacro{figcolor}
-% The |figcolor=color| options sets the background color of 
+% The |figcolor=color| options sets the background color of
 % inserted missing figures.
 % The default color is |black!40|.
 % \begin{verbatim}
@@ -593,7 +593,7 @@
 % \begin{verbatim}
 % \listoftodos[I can be called anything]
 % \end{verbatim}
-% 
+%
 %
 %
 % \subsection{Known issues}
@@ -617,8 +617,8 @@
 % packages, you have to load them \emph{before} the todonotes
 % package, otherwise you will get an ''Option clash'' error when
 % latex works on the document.
-% 
-% If both the menukeys and the xcolor (with the option \verb!table!) 
+%
+% If both the menukeys and the xcolor (with the option \verb!table!)
 % package should be loaded, the following order must be used.
 % \begin{verbatim}
 %\usepackage[table]{xcolor}
@@ -633,7 +633,7 @@
 % \noindent
 % Testing\todo{Does this eat the space?} testing.
 %
-% This can be prevented by adding curly parenthesis after the 
+% This can be prevented by adding curly parenthesis after the
 % todo command, like shown below.
 % \begin{verbatim}
 %Testing\todo{Does this eat the space?}{} testing.\end{verbatim}
@@ -656,7 +656,7 @@
 % \makeatletter
 %   \providecommand\@dotsep{5}
 % \makeatother
-% \listoftodos\relax 
+% \listoftodos\relax
 % \end{verbatim}
 %
 % NOT TESTED
@@ -682,13 +682,13 @@
 % It probably means that your latex installation is outdated, as
 % only newer versions of latex driver for tikz supports the
 % |remember picture| option.
-% For additional info consult 
-% ''Section 9.2.2 Producing PDF Output'' in the tikz manual. 
+% For additional info consult
+% ''Section 9.2.2 Producing PDF Output'' in the tikz manual.
 % \url{http://www.ctan.org/tex-archive/graphics/pgf/base/doc/generic/pgf/pgfmanual.pdf}
 %
 %
 % \subsubsection{Todonotes wrongly placed in the margin}
-% When using some document classes or packages, the todonotes inserted in the 
+% When using some document classes or packages, the todonotes inserted in the
 % page margin can be placed quite oddly.
 % This is often caused by a wrong value of the |\marginparwidth| lenght.
 % Try using the code below in your preamble to see if this cures the problem.
@@ -696,13 +696,13 @@
 % \setlength{\marginparwidth}{2cm}
 % \end{verbatim}
 %
-% If the todonotes are inserted in the wrong margin, the solution is the 
+% If the todonotes are inserted in the wrong margin, the solution is the
 % |\reversemarginpar| command.
-% When this command is issued the following marginpars (which todonotes 
+% When this command is issued the following marginpars (which todonotes
 % relies on) is inserted in the other margin.
 %
 % \subsubsection{Reduce number of warnings}
-% If the width of the inserted todonotes is forced to be larger than the 
+% If the width of the inserted todonotes is forced to be larger than the
 % available space in the margin, a lot of warnings are issued.
 % This can be reduced with the following code.
 % \begin{verbatim}
@@ -720,22 +720,22 @@
 %
 %
 % \subsubsection{List of todo heading is not correctly formatted}
-% If using natbib, the todonotes list title gets screwed up unless 
+% If using natbib, the todonotes list title gets screwed up unless
 % you do something like this:
 % \begin{verbatim}
-% \makeatletter\let\chapter\@undefined\makeatother 
+% \makeatletter\let\chapter\@undefined\makeatother
 % \end{verbatim}
 % Suggestion by Richard Stanton.
 %
-% 
+%
 % \subsubsection{Trouble with classicthesis.sty}
 % \href{http://tex.stackexchange.com/questions/33423/todonotes-produces-double-inline-notes-instead-of-single-margin-note-with-class}{Problem description on tex.stackexchange.com}.
-% 
-% Solution by Stefan Kottwitz. 
-% The problem is caused by the redefinition of |\marginpar| in 
-% classicthesis.sty. |\marginpar| is used by todonotes. 
-% It can be fixed by restoring the original meaning, if you don't 
-% need the classicthesis marginpar style. 
+%
+% Solution by Stefan Kottwitz.
+% The problem is caused by the redefinition of |\marginpar| in
+% classicthesis.sty. |\marginpar| is used by todonotes.
+% It can be fixed by restoring the original meaning, if you don't
+% need the classicthesis marginpar style.
 % Just add this to your document preamble:
 % |\let\marginpar\oldmarginpar|
 %
@@ -754,7 +754,7 @@
 % \begin{verbatim}
 % \todo[owner={Fabrice}]{Stuff}
 % \end{verbatim}
-% Add info on who ''owns'' the current todo. 
+% Add info on who ''owns'' the current todo.
 % Idea: Fabrice Niessen
 %
 %
@@ -777,8 +777,8 @@
 %
 %
 %
-% 
-% 
+%
+%
 % \subsection{Usage methods}
 % In this section I have collected some different methods to use the
 % |todonotes| package.
@@ -799,11 +799,11 @@
 % \begin{verbatim}
 % \usepackage[colorinlistoftodos]{todonotes}
 % \end{verbatim}
-% 
+%
 %
 % \subsubsection{Define new commands with arbitrary default options}
-% If you do not like the default values of the standard todo command, 
-% it is possible to define a new command with the similar 
+% If you do not like the default values of the standard todo command,
+% it is possible to define a new command with the similar
 % functionality of |\todo| with custom default values.
 % \begin{verbatim}
 % \newcommand{\todoredefined}[2][]
@@ -819,12 +819,12 @@
 % \end{verbatim}
 % \todoredefined[color=green]{Test of newly defined command, requesting a green color.}
 % This can be done with all the accepted options for the |\todo| command.
-% 
+%
 %
 %
 % \subsubsection{Enumerate todonotes}
 %
-% If the inserted todonotes should be enumerated, it is possible to define 
+% If the inserted todonotes should be enumerated, it is possible to define
 % a new command with the desired behaviour.
 % \begin{verbatim}
 % \newcounter{todocounter}
@@ -834,7 +834,7 @@
 % \newcounter{todocounter}
 % \newcommand{\todonum}[2][]
 % {\stepcounter{todocounter}\todo[#1]{\thetodocounter: #2}}
-% The idea is to define a new counter |todocounter|, and insert the 
+% The idea is to define a new counter |todocounter|, and insert the
 % \todonum{A numbered todonote.}
 % value of the counter in each todonote.
 % The new command can be used like
@@ -845,14 +845,14 @@
 % \end{verbatim}
 %
 %
-% 
+%
 % \subsubsection{Comments ''a la Word''}
 %
 % Fabrice Niessen sent me the following use case.
 % The idea is to define a new command |\mycomment| which adds a
 % counter and optionally the initials of the author to the inserted
 % todonote.
-% 
+%
 % \begin{verbatim}
 % \newcounter{mycomment}
 % \newcommand{\mycomment}[2][]{%
@@ -872,7 +872,7 @@
 %        \todo[color={red!100!green!33},size=\small]{%
 %            \textbf{Comment [\uppercase{#1}\themycomment]:}~#2}%
 %    }}
-% 
+%
 % The command |\mycomment[HSM]{Testing first time.}| is displayed
 % \mycomment[HSM]{Testing first time.}%
 % like shown in the left margin, and another call of the command is
@@ -995,7 +995,7 @@
 % \end{itemize}
 % }
 % \end{verbatim}
-% 
+%
 % \todoin{
 % Some text.
 % \begin{align}
@@ -1056,19 +1056,19 @@
 %
 % \pagebreak[4]
 % \subsubsection{Numbered todonotes}
-% 
+%
 % The inserted todonotes can be argumented with the current subsubsection number.
 % The code is shown below.
 % \newcommand{\ntodo}[2][]{\todo[#1]{\thesubsubsection{}. #2}}
 % \begin{verbatim}
 % \newcommand{\ntodo}[2][]{\todo[#1]{\thesubsubsection{}. #2}}
 % \end{verbatim}
-% By changing |\thesubsubsection| to |\thesection|, the current section number 
+% By changing |\thesubsubsection| to |\thesection|, the current section number
 % can be inserted instead of the subsubsection number.
-% The result looks \ntodo{A numbered todo.} like. 
+% The result looks \ntodo{A numbered todo.} like.
 % Which were generated by the code
 % \begin{verbatim}
-% \ntodo{A subsection numbered todo.}. 
+% \ntodo{A subsection numbered todo.}.
 % \end{verbatim}
 %
 %
@@ -1079,8 +1079,8 @@
 % \todo[caption={\protect\hypertarget{todo\thetodoListItems}{}\thesection. #2}, #1]
 % {\begin{spacing}{1} \hfill \hyperlink{todo\thetodoListItems}{#2} \end{spacing} }}
 %
-% Manduca have combined several of the modifications above into a highly specialized 
-% todo command. 
+% Manduca have combined several of the modifications above into a highly specialized
+% todo command.
 % \sstodo{Small notes with links back to the list of todos.}
 % She uses the code:
 % \sstodo{Smart notes with links back to the list of todos.}
@@ -1092,29 +1092,29 @@
 % \todo[caption={\protect\hypertarget{todo\thetodoListItems}{}\thesection. #2}, #1]
 % {\begin{spacing}{1} \hfill \hyperlink{todo\thetodoListItems}{#2} \end{spacing} }}
 % \end{verbatim}
-% 
+%
 % Using this approach it is possible to customize the behavior of the inserted notes
 % to a very high degree.
 %
-% 
+%
 % \subsubsection{Alter the appearance of the list of todos}
-% Marco Daniel gives the following example of how to add section 
+% Marco Daniel gives the following example of how to add section
 % numbers to the elements in the list of todos.
-% The code is slightly modified from 
+% The code is slightly modified from
 % \url{http://tex.stackexchange.com/questions/18838/replacing-page-number-with-other-counter-in-listoftodos}.
-% An example of the modified list of todos is shown below, the complete 
+% An example of the modified list of todos is shown below, the complete
 % code example is given in the example directory.\\
 % \noindent
 % \begin{tikzpicture}
 % \draw node[shape=rectangle, fill=black!30, inner sep=1mm]{\includegraphics[width=\linewidth-2mm]{img/AlteredAppearenceOfListOfTodos.png}};
 % \end{tikzpicture}
-% 
-% 
+%
+%
 % \subsubsection{Tikz externalization issues}
-% 
-% Using the tikz externalization framework together with todonotes 
+%
+% Using the tikz externalization framework together with todonotes
 % can lead to some problems.
-% One solution is to disable the externalization just before the \verb!todo! 
+% One solution is to disable the externalization just before the \verb!todo!
 % command is issued and then reactivate externalization afterwards.
 % The \verb!ruggedtodo! handles this deactivation and reactivation.
 % \begin{verbatim}
@@ -1122,8 +1122,8 @@
 % \tikzexternalize
 % \newcommand{\ruggedtodo}[2][]{\tikzexternaldisable\todo[#1]{#2}\tikzexternalenable}
 % \end{verbatim}
-% 
-% 
+%
+%
 % \subsubsection{Highligt text to fix}
 % Tobias Winchen provides the following example on how to highlight
 % text related to the inserted todonote.
@@ -1134,7 +1134,7 @@
 % \newcommand{\hlfix}[2]{\texthl{#1}\todo{#2}}
 % \fi
 % \makeatother
-% Example \hlfix{wrong text}{fix text}~continues here. 
+% Example \hlfix{wrong text}{fix text}~continues here.
 % Notice that the code relies on the \verb!soul! package.
 % \begin{verbatim}
 % \makeatletter
@@ -1144,12 +1144,12 @@
 % \newcommand{\hlfix}[2]{\texthl{#1}\todo{#2}}
 % \fi
 % \makeatother
-% Example \hlfix{wrong text}{fix text}~continues here. 
+% Example \hlfix{wrong text}{fix text}~continues here.
 % \end{verbatim}
-% 
-% 
-% 
-% 
+%
+%
+%
+%
 %
 % \iffalse
 % \StopEventually{\PrintChanges\PrintIndex}
@@ -1361,7 +1361,7 @@
 \define@key{todonotes.sty}%
     {textwidth}{\renewcommand{\@todonotes@textwidth}{#1}}
 %    \end{macrocode}
-% Make the text size as an option. It requires some magic with the 
+% Make the text size as an option. It requires some magic with the
 % |\csname| and |\endcsname| macros, as commands cannot be taken as
 % options for a package.
 %    \begin{macrocode}
@@ -1391,7 +1391,7 @@
 %    \begin{macrocode}
 \ProcessOptionsX*
 %    \end{macrocode}
-% If the |obeyDraft| is given, check whether one of the |draft|, 
+% If the |obeyDraft| is given, check whether one of the |draft|,
 % |draftcls| or |draftclsnofoot|
 % options are given and enable or disable the functionality of this
 % package.
@@ -1418,7 +1418,7 @@
 
 % \subsection{Options for the todo command}
 %
-% In this part the various options for 
+% In this part the various options for
 % commands in the package are defined.
 % Set an arbitrarily fill color
 %    \begin{macrocode}
@@ -1536,7 +1536,7 @@
     \newcommand{\missingfigure}[2][]{}
 \else % \if@todonotes@disabled
 %    \end{macrocode}
-% Define the |\listoftodos| command and define the 
+% Define the |\listoftodos| command and define the
 % appearance of the list of todos.
 %    \begin{macrocode}
 \newcommand{\listoftodos}[1][\@todonotes@todolistname]
@@ -1547,10 +1547,10 @@
 % Define styles used by the todo command
 %    \begin{macrocode}
 \tikzstyle{notestyleraw} = [
-    draw=\@todonotes@currentbordercolor, 
+    draw=\@todonotes@currentbordercolor,
     fill=\@todonotes@currentbackgroundcolor,
     line width=0.5pt,
-    text width = \@todonotes@textwidth - 1.6 ex - 1pt, 
+    text width = \@todonotes@textwidth - 1.6 ex - 1pt,
     inner sep = 0.8 ex,
     rounded corners=4pt]
 %    \end{macrocode}
@@ -1564,13 +1564,13 @@
 \tikzstyle{notestyle} = [notestyleraw]
 \fi
 \tikzstyle{notestyleleft} = [
-    notestyle, 
+    notestyle,
     left]
 \tikzstyle{connectstyle} = [
-    thick, 
+    thick,
     draw=\@todonotes@currentlinecolor]
 \tikzstyle{inlinenotestyle} = [
-    notestyle, 
+    notestyle,
     text width=\linewidth - 1.6 ex - 1 pt]
 %    \end{macrocode}
 %
@@ -1599,7 +1599,7 @@
 \else%
 %    \end{macrocode}
 % Add the item to the list of todos. When the option
-% |colorinlistoftodos| is given to the package a small colored 
+% |colorinlistoftodos| is given to the package a small colored
 % square is added in front of the text.
 %    \begin{macrocode}
 \addtocounter{@todonotes@numberoftodonotes}{1}%
@@ -1640,7 +1640,7 @@
 % When the todonote should be placed inside a marginpar, the code
 % below is applied.
 % First is the current location in the document stored, this enables
-% us later to connect this point with the inserted todonote. 
+% us later to connect this point with the inserted todonote.
 %    \begin{macrocode}
 \begin{tikzpicture}[remember picture, overlay, baseline=-0.75ex]%
     \node [coordinate] (inText) {};%
@@ -1807,7 +1807,7 @@
     (-2, -2.5) rectangle +(\@todonotes@currentfigwidth, \@todonotes@currentfigheight);
 \draw (2, -0.3) node[right, text
     width=\@todonotes@currentfigwidth-4.5cm] {#2};
-\draw[red, fill=white, rounded corners = 5pt, line width=10pt] 
+\draw[red, fill=white, rounded corners = 5pt, line width=10pt]
     (30:2cm) -- (150:2cm) -- (270:2cm) -- cycle;
 \draw (0, 0.3) node {\@todonotes@MissingFigureUp};
 \draw (0, -0.3) node {\@todonotes@MissingFigureDown};
@@ -1817,7 +1817,7 @@
 %    \end{macrocode}
 % \end{macro}
 % \begin{macro}{\todototoc}
-% Inserts a reference to the list of todos in the table of contents. If |chapter| is defined, 
+% Inserts a reference to the list of todos in the table of contents. If |chapter| is defined,
 % |chapter| is used as level otherwise will |section| be used.
 % The |\todototoc| command respects the disable option.
 %    \begin{macrocode}
@@ -1841,4 +1841,3 @@
 % \newpage
 % \Finale
 \endinput
-
